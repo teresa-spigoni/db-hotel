@@ -43,5 +43,4 @@ WHERE (YEAR(CURRENT_TIMESTAMP) - YEAR(`date_of_birth`)) < 30;
 
 SELECT *
 FROM `prenotazioni`
-WHERE YEAR(`created_at`) <= 2018
-AND MONTH(`created_at`) < 5;
+WHERE `created_at` < '2018-05-01';
