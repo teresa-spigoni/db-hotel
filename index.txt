@@ -37,6 +37,7 @@ WHERE `name` LIKE 'e%';
 SELECT *
 FROM `ospiti`
 WHERE (YEAR(CURRENT_TIMESTAMP) - YEAR(`date_of_birth`)) < 30;
+WHERE `date_of_birth` > (CURDATE() - INTERVAL 30 YEAR); (migliore)
 
 --------------------------------------------
 ● Seleziona tutte le prenotazioni precedenti a maggio 2018
